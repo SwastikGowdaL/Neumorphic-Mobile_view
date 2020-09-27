@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script defer src="https://friconix.com/cdn/friconix.js"> </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Button</title>
+
+<style>
+*{
+    box-sizing: border-box;
+}
+body{
+    background: #A8B2B8;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.details{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+}
+.flex1{
+    display: flex;
+    justify-content:space-between;
+    border-radius: 20px;
+    background: #a8b2b8;
+box-shadow: inset 20px 20px 60px #8f979c, 
+            inset -20px -20px 60px #d9e5ec;
+    padding-bottom: 2%;
+    padding-right: 1%;
+    padding-left: 1%;
+    
+}
+
+</style>
+
+
+</head>
+<body>
+<div class="flex1">
+    <div style="padding-top: 3%;"><a href="#"><i class="fi-xnllxl-arrow-simple fi-2x"></i></a></div>
+
+   
+    <div style="padding-top: 3%; padding-right: 2%;"><img src="ninja.png" alt=""></div>
+</div>  
+
+<div class="" style="background-color:#a8b2b8 ; width: 92%; height: 420px; margin-top: 6%; border-radius: 20px;margin-left: 4%; background: linear-gradient(145deg, #b4bec5, #97a0a6);
+box-shadow:  20px 20px 60px #7e868a, -20px -20px 60px #d2dfe6;">
+
+
+<div style="font-size: 210%; padding-top:10px; padding-left: 13px;font-weight: bold; color: rgb(92, 92, 92); text-shadow: -1px -1px -1px #111,2px 2px 1px #363636; text-rendering: optimizeLegibility;">Special Beef <br> Hot dog</div>
+
+<img src="hd.png" alt="" width="100%" height="335px">
+<div style="margin-top: -80px;"><center>
+    <span  onclick="minus();" style="cursor: pointer;"><i class="fi-xwluxl-minus-wide fi-2x"></i></span>
+     <span id="nmbcnt" style=" padding: 2% 4%; color: white; border-radius: 10px;background-color: black;"></span>
+<span onclick="plus();" style="cursor: pointer;"><i class="fi-xwluxl-plus-wide fi-2x"></i></span>
+</center></div>
+</div>
+<p style="text-align: center; font-size: 110%; line-height: 29px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-weight:400; color: rgb(49, 49, 49);
+margin-top: 10%; background: #a8b2b8;
+box-shadow: inset 20px 20px 60px #8f979c, 
+            inset -20px -20px 60px #d9e5ec;border-radius: 10px; ">Hot Dog is a gfrilled or staeamed food whwre the <br> sasuage is served in the sit of a partially sliced ym</p>
+<center>
+    <button style="display: inline; border-radius: 10px; padding: 5% 5%; color: black;
+background-color: white;border: none; margin-right: 10%;font-size: 160%;">Add to cart</button>
+<button style="display: inline; border-radius: 10px; padding: 5% 5%; color: rgb(255, 255, 255);background-color: rgb(0, 0, 0); border: none;font-size: 160%;margin-top:7%;">Buy Now</button>
+</center>
+
+
+
+<script >
+    var a=1;
+    document.getElementById("nmbcnt").innerHTML=a;
+    function plus(){
+        a+=1;
+        document.getElementById("nmbcnt").innerHTML=a;
+    }
+    function minus(){
+        a-=1;
+        document.getElementById("nmbcnt").innerHTML=a;
+        if (a<0){
+            a=0;
+            document.getElementById("nmbcnt").innerHTML=a;
+        }
+    }
+</script>
+</body>
+</html>
